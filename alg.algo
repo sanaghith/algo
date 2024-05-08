@@ -1,0 +1,18 @@
+ALGORITHM 
+VAR
+    str:STRING
+    nb_v,nb_c:INTEGER:=0
+    nb_w:INTEGER:=0
+BEGIN
+    Read(str)
+    FOR i FROM 0 TO str.length-1 STEP 1  DO
+        IF (str[i]==" ") THEN
+            nb_w:=nb_w+1
+        END_IF
+        IF (str[i]==("e" ou "i" ou "o" ou "u")) THEN
+    nb_v:=nb_v+1
+        END_IF
+        nb_c:=nb_c+1
+    END_FOR
+    Write(nb_c,nb_v,nb_w)
+END
